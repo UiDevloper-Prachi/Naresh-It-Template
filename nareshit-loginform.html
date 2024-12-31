@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<style>
+    ul {
+        list-style: none;
+    }
+
+    .dropdown {
+        margin-left: 700px;
+
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+
+    }
+
+    .office-workers:hover {
+        width: 400px;
+    }
+
+    .div-main {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+    }
+
+    .bi-1-circle {
+        color: yellow;
+        font-size: 70px;
+    }
+
+    .bi-2-circle {
+        color: rgb(231, 9, 9);
+        font-size: 70px;
+    }
+
+    .bi-3-circle {
+        color: rgb(13, 104, 240);
+        font-size: 70px;
+    }
+
+    .bi-4-circle {
+        color: rgb(41, 221, 17);
+        font-size: 70px;
+    }
+
+
+    footer h4 {
+        text-shadow: 2px 2px 4px white;
+    }
+
+    footer ul {
+        list-style: disc;
+        text-shadow: 2px 2px 4px white;
+    }
+
+    .main-div {
+        margin-left: 300px;
+    }
+
+    h5 {
+        box-shadow: 5px 5px 5px 5px rgb(142, 138, 138);
+        color: brown;
+        width: 300px;
+        margin-left: 50px;
+        text-align: center;
+    }
+</style>
+
+<body class="container-fluid">
+    <div class="text-center ">
+        <h2>Naresh Institute and Technologies</h2>
+    </div>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-black mt-4 ">
+            <div class="container-fluid">
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="navbar-collapse collapse" id="menu">
+                    <ul class="navbar-nav p-1">
+                        <li class="nav-item"><a href="../Public/8sept-Naresh-It.html"
+                                class="nav-link active text-info"><span class="bi bi-house ">Home</span></a></li>
+                        <li class="nav-item active"><a href="../Public/8sept-Naresh-It-about.html"
+                                class="nav-link text-info "><span class="bi bi-question-circle">About</span></a></li>
+                        <li class="nav-item active"><a href="../Public/8sept-Nareshit-servisepage.html"
+                                class="nav-link text-info "><span class="bi bi-question-diamond">Service</span></a></li>
+                        <li class="nav-item active"><a href="../Public/8sept-Nareshit-contactpage.html"
+                                class="nav-link text-info "><span class="bi bi-phone">Contact
+                                    us</span></a></li>
+
+                        <div class="dropdown p-1">
+
+                            <button class="dropdown-toggle  btn  text-danger  btn-outline-info   "
+                                data-bs-toggle="dropdown">
+                                <span class="bi bi-cloud-upload">
+                                </span><span>sign
+                                    In</span> </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../Public/8sept-nareshit-loginform.html"><span
+                                            class="dropdown-item-text text-white"></span>
+                                        <span class="bi bi-key-fill"></span>Sign in</a>
+                                <li><a href="../Public/8sept-nareshit-Registrationform.html" class="dropdown-item"><span
+                                            class="dropdown-item-text"></span> <span
+                                            class="bi bi-sign-stop-fill"></span>Sign up</a>
+                                <li><a href="../Public/8sept-nareshit-changepassword.html" class="dropdown-item"><span
+                                            class="dropdown-item-text"></span> <span
+                                            class="bi bi-lock-fill"></span>Change password</a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </nav>
+    </div>
+
+    <div class="main-div  d-flex justify-content-center  mt-5 w-50 ">
+        <div class="border border-2 p-4 w-75 mt-5 bg-secondary-subtle rounded rounded-4 border-dark">
+            <div class="p-3">
+                <h5 style="font-size: 20px; ">Please Login Your Account</h5>
+            </div>
+            <div>
+                <dl>
+                    <dt class="mb-2 mt-3">Email id:</dt>
+                    <dd class="input-group-text bg-secondary">
+                        <span class="bi bi bi-person-fill"></span>
+                        <input type="email" placeholder="Email id" class="input-group form-control">
+                        <span class="bi bi-star-fill"></span>
+                    </dd>
+                    <dt class="mb-2 mt-4">Password:</dt>
+
+                    <dd class="input-group-text bg-secondary">
+                        <span class="bi bi bi-person-fill"></span>
+                        <input type="password" placeholder="Password" class="input-group form-control">
+                        <span class="bi bi-star-fill"></span>
+                    </dd>
+                </dl>
+            </div>
+            <div>
+                <div class="btn btn-white mt-3"><span class="bi bi bi-person-fill-add"></span> <span
+                        class="btn btn-success"><a class="text-white"
+                            href="../Public/8sept-nareshit-Registrationform.html">Sign
+                            Up</a></span>
+                </div>
+            </div>
+            <div class="text-end">
+                <div class="btn btn-danger "> <span class="bi bi bi-sign-dead-end"></span> Sign In</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="mt-5 bg-black text-white p-5">
+        <div class="footer-title text-center">
+            <h4>Naresh Technologies</h4>
+        </div>
+        <div class="d-flex justify-content-evenly  mt-4">
+            <ul>
+                <li class="bi bi-facebook mb-2"> Facebook
+                </li>
+                <li class="bi bi-google mb-2"> Google</li>
+                <li class="bi bi-twitter mb-2"> Twitter</li>
+                <li class="bi bi-youtube"> Youtube</li>
+            </ul>
+            <ul>
+                <li class="mb-2">Home</li>
+                <li class="mb-2">About</li>
+                <li class="mb-2">Service</li>
+                <li class="mb-2">Contact</li>
+            </ul>
+            <ul>
+                <li class="mb-2">Name : Naresh Istitute</li>
+                <li class="mb-2">Email : info@nareshit.com</li>
+                <li class="mb-2">Contact : +91-xxxxxxxxxx</li>
+                <li class="mb-2">Address : Sr nagar, Hyderabad, Telangana, India</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

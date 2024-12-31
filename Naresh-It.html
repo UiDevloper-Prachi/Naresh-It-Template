@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<style>
+    ul {
+        list-style: none;
+    }
+
+    .dropdown {
+        margin-left: 700px;
+
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+
+    }
+
+    .office-workers:hover {
+        width: 400px;
+    }
+
+    .div-main {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+    }
+
+    .bi-1-circle {
+        color: yellow;
+        font-size: 70px;
+    }
+
+    .bi-2-circle {
+        color: rgb(231, 9, 9);
+        font-size: 70px;
+    }
+
+    .bi-3-circle {
+        color: rgb(13, 104, 240);
+        font-size: 70px;
+    }
+
+    .bi-4-circle {
+        color: rgb(41, 221, 17);
+        font-size: 70px;
+    }
+
+    .card {
+        box-shadow: 5px 5px 5px 5px black;
+    }
+
+    footer h4 {
+        text-shadow: 2px 2px 4px white;
+    }
+
+    footer ul {
+        list-style: disc;
+        text-shadow: 2px 2px 4px white;
+    }
+</style>
+
+<body class="container-fluid">
+    <header>
+        <div class="text-center ">
+            <h2>Naresh Institute and Technologies</h2>
+        </div>
+        <div>
+            <nav class="navbar navbar-expand-lg bg-black mt-4 ">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon "></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="menu">
+                        <ul class="navbar-nav p-1">
+                            <li class="nav-item"><a href="" class="nav-link active text-info"><span
+                                        class="bi bi-house ">Home</span></a></li>
+                            <li class="nav-item active"><a href="../Public/8sept-Naresh-It-about.html"
+                                    class="nav-link text-info "><span class="bi bi-question-circle">About</span></a>
+                            </li>
+                            <li class="nav-item active"><a href="../Public/8sept-Nareshit-servisepage.html"
+                                    class="nav-link text-info "><span class="bi bi-question-diamond">Service</span></a>
+                            </li>
+                            <li class="nav-item active"><a href="../Public/8sept-Nareshit-contactpage.html"
+                                    class="nav-link text-info "><span class="bi bi-phone">Contact
+                                        us</span></a></li>
+
+                            <div class="dropdown p-1">
+
+                                <button class="dropdown-toggle  btn  text-danger  btn-outline-info   "
+                                    data-bs-toggle="dropdown">
+                                    <span class="bi bi-cloud-upload">
+                                    </span><span>sign
+                                        In</span> </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../Public/8sept-nareshit-loginform.html"><span
+                                                class="dropdown-item-text text-white"></span>
+                                            <span class="bi bi-key-fill"></span>Sign in</a>
+                                    <li><a href="../Public/8sept-nareshit-Registrationform.html"
+                                            class="dropdown-item"><span class="dropdown-item-text"></span> <span
+                                                class="bi bi-sign-stop-fill"></span>Sign out</a>
+                                    <li><a href="../Public/8sept-nareshit-changepassword.html"
+                                            class="dropdown-item"><span class="dropdown-item-text"></span> <span
+                                                class="bi bi-lock-fill"></span>Change password</a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </nav>
+        </div>
+        <div class="carousel slide mt-4" data-bs-ride="carousel" id="banners" data-bs-theme="dark">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="./BOOSTRAP-TASK/Images/a1.jpg" class="d-block" width="100%" height="400px">
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <img src="./BOOSTRAP-TASK/Images/a2.jpg" class="d-block" width="100%" height="400px">
+                </div>
+
+                <div class="carousel-item " data-bs-interval="2000">
+                    <img src="./BOOSTRAP-TASK/Images/a3.jpg" class="d-block" width="100%" height="400px">
+                </div>
+                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banners"><span
+                        class="carousel-control-prev-icon"></span></button>
+                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#banners"><span
+                        class="carousel-control-next-icon"></span></button>
+
+
+            </div>
+
+        </div>
+
+        <div class="text-center p-3">
+            <button class="btn bg-dark btn-outline-warning p-3 w-50">Show me what's in the package</button>
+        </div>
+        <div class="text-center p-3">
+            <button class="btn bg-info text-white btn-outline-danger p-3 "> what in the package</button>
+
+            <p class="text-center mt-4">
+                * A package is a small container in which a quantity of something is sold. Packages are either small
+                boxes <br>
+                made of thin cardboard, or bags or envelopes made of paper or plastic. ... When a product is packaged,
+                it is <br>
+                put into containers to be sold.
+            </p>
+        </div>
+
+        <div class="main">
+            <div>
+                <table class="table table-hover table-bordered table-striped text-center border-black h-100 ">
+                    <thead>
+                        <tr>
+                            <td class="bg-secondary text-white">Department</td>
+                            <td class="bg-secondary text-white">Include</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>M.Tech</td>
+                            <td><span class="bi bi-check"></span></td>
+                        </tr>
+                        <tr>
+                            <td>B.Tech</td>
+                            <td><span class="bi bi-check"></span></td>
+                        </tr>
+                        <tr>
+                            <td>MCA</td>
+                            <td><span class="bi bi-check"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style="margin-left: 200px;">
+                <div>
+                    <img class="office-workers" src="../Public/BOOSTRAP-TASK/Images/a2.jpg" width="350px">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="mt-4 p-4">
+        <div>
+            <div>
+                <div class="bg-primary-subtle">
+                    <div>
+                        <h3 class="text-center mb-4 ">What is the Job</h3>
+
+                    </div>
+                    <div class=" div-main">
+                        <div class="div-1 d-flex">
+                            <ul>
+                                <li class="bi bi-keyboard fs-1"></li>
+                                <li>Types Of Jobs</li>
+                                <li>Volcanologist</li>
+                                <li>Quantumphysicist....</li>
+                                <li>Oceanographer....</li>
+                                <li>Biomedical engineer....</li>
+
+                            </ul>
+                            <ul>
+                                <li class="bi bi-file-word fs-1"></li>
+                                <li>Types Of Jobs</li>
+                                <li>Job profile developed by the personnel <br> department of a business might include
+                                    such
+                                    things
+                                    as job responsibilities, <br> required qualifications, advancement prospects.</li>
+
+                            </ul>
+                            <ul>
+                                <li class="bi bi-wordpress fs-1"></li>
+                                <li> Job profile</li>
+                                <li>Profile summary is a summary of your education, skills, career experiences, and
+                                    goals.</li>
+
+                            </ul>
+                        </div>
+                        <div class="div-2 d-flex">
+                            <ul>
+                                <li class="bi bi-laptop fs-1"></li>
+                                <li>Types IT Skills</li>
+                                <li>Coding.</li>
+                                <li>Communication.</li>
+                                <li>Networks.</li>
+                                <li>Time Management.</li>
+                                <li>More information Technology Skills</li>
+
+                            </ul>
+                            <ul>
+                                <li class="bi bi-laptop fs-1"></li>
+                                <li>Freshers Key Skills</li>
+                                <li>Communication.</li>
+                                <li>Ability to Work Under Pressure.</li>
+                                <li>Decision Making.</li>
+                                <li>Time Management.</li>
+                                <li>Self-motivation.</li>
+                                <li>Conflict Resolution.</li>
+                                <li>Personal sills?Leadership.</li>
+                                <li>Adaptability</li>
+
+                            </ul>
+                            <ul>
+                                <li class="bi bi-window-desktop fs-1"></li>
+                                <li>Personal Sills</li>
+                                <li>A skill is the ability to do something well, a certain competence or proficiency.
+                                    Skills
+                                    are typically acquired or developed through direct experiences and training, and
+                                    they
+                                    can require sustained effort.</li>
+
+                            </ul>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div>
+            <div>
+                <div class="d-flex p-4">
+                    <div class="p-4 me-4 border-bottom">
+                        <div class="mb-4 fw-bold"><span class="bi bi-1-circle "></span> Why do you want
+                            this job?</div>
+                        <p> The hiring manager wants to: Learn about your career goals and how this
+                            position fits into
+                            your
+                            plan. Make sure that you are sincerely interested in the job and will be motivated to
+                            perform if
+                            hired. Find out what you know about the company, industry, position (and if you took the
+                            time to
+                            research).</p>
+                    </div>
+                    <div class="p-4 ms-4 ">
+                        <img src="../Public/BOOSTRAP-TASK/Images/ind1.jpg" width="250px" height="150px">
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <div class="d-flex p-4">
+                    <div class="p-4 ms-4">
+                        <img src="../Public/BOOSTRAP-TASK/Images/ind2.png" width="250px" height="150px">
+                    </div>
+                    <div class="p-4 me-4 border-bottom">
+                        <div class="mb-4 fw-bold"><span class="bi bi-2-circle "></span> What is a CV example?</div>
+                        <p> A resume is a brief summary. ... If you were writing your resume you would include only the
+                            work information that relates specifically to the job you're applying for, but for a
+                            Curriculum Vitae, you would also include all your teaching experience, lab and field work..
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div>
+                <div class="d-flex p-4">
+                    <div class="p-4 me-4 border-bottom">
+                        <div class="mb-4 fw-bold"><span class="bi bi-3-circle"></span> Do you need a resume for your
+                            first job?</div>
+                        <p> When writing your first resume with no work experience, it's appropriate to include casual
+                            jobs like babysitting, pet sitting, lawn mowing, and shoveling snow. All experience counts
+                            and the way you present yourself, your skills, and your assets to a hiring manager begins
+                            with a strong resume.</p>
+                    </div>
+                    <div class="p-4 ms-4">
+                        <img src="../Public/BOOSTRAP-TASK/Images/ind3.png" width="250px" height="150px">
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <div class="d-flex p-4">
+                    <div class="p-4 ms-4">
+                        <img src="../Public/BOOSTRAP-TASK/Images/ind4.jpg" width="250px" height="150px">
+                    </div>
+                    <div class="p-4 me-4 ">
+                        <div class="mb-4 fw-bold"><span class="bi bi-4-circle "></span> Why do you think you can well do
+                            in this job?</div>
+                        <p> I believe I will do well in this job because I have the relevant skills and it is my field
+                            of interest. ... I have a confident that I can do well in the job because of self
+                            confidence, positive attitude. Previous success also brings self confidence for the future
+                            success.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div>
+            <div class="text-center mt-4">
+                <button class="btn btn-info btn-outline-dark text-white p-2 me-4">Request call back</button>
+                <button class="btn btn-secondary btn-outline-secondary text-dark">FAQ's</button>
+            </div>
+
+        </div>
+
+        <div class="mt-5 bg-warning-subtle " style="height: 380px; padding: 30px;">
+            <div class="text-center mb-5 ">
+                <h2>Student Department Details</h2>
+            </div>
+            <div>
+                <div class="d-flex justify-content-between text-center">
+                    <ul>
+
+                        <li class="bi bi-hourglass fs-1"></li>
+                        <li class="mt-3">Average Salary Offered</li>
+                        <li class="fs-4 mt-1">INR 7 L per annum</li>
+                        <li class="mt-1">per annum</li>
+                    </ul>
+                    <ul>
+                        <li class="bi bi-shuffle fs-1"></li>
+                        <li class="mt-3">Duration</li>
+                        <li class="fs-4 mt-1">2</li>
+                        <li class="mt-1">years</li>
+                    </ul>
+                    <ul>
+                        <li class="bi bi-hand-thumbs-up fs-1"></li>
+                        <li class="mt-3">Average fee Incurred</li>
+                        <li class="fs-4 mt-1">INR 25,000 - 2 L</li>
+                        <li class="mt-1">per annum</li>
+                    </ul>
+                    <ul>
+                        <li class="bi bi-flag fs-1"></li>
+                        <li class="mt-3">Indian Institute of Technology, [IIT] Kanpur</li>
+                        <li class="fs-4 mt-1">49,035</li>
+                        <li class="mt-1">Kanpur</li>
+                    </ul>
+                </div>
+                <div class="text-center mt-5" style="font-size: 13px">
+                    <p>* job: A group of homogeneous tasks related by similarity of functions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="text-center mt-5">
+                <h1>SERVICES</h1>
+            </div>
+            <div class="d-flex justify-content-between mt-5">
+                <div class="card w-25 bg-danger-subtle">
+                    <div class="card-header">
+                        <img src="../Public/BOOSTRAP-TASK/Images/s1.jpg" class="w-100">
+
+                    </div>
+                    <div class="card-body">
+                        <p class="fw-bold mt-4 ">WEB DESIGN!!</p>
+                        <p>Online ordering system helps to maintain a Better Business Relationship with your customers,
+                            which is a key factor to run any successful business.</p>
+                    </div>
+
+                </div>
+                <div class="card w-25 bg-warning-subtle">
+                    <div class="card-header">
+                        <img src="../Public/BOOSTRAP-TASK/Images/s2.jpg" class="w-100">
+
+                    </div>
+                    <div class="card-body">
+                        <p class="fw-bold mt-4 ">IT SERVICES!!</p>
+                        <p>Online ordering system helps to maintain a Better Business Relationship with your customers,
+                            which is a key factor to run any successful business.</p>
+                    </div>
+
+                </div>
+                <div class="card w-25 bg-dark-subtle">
+                    <div class="card-header">
+                        <img src="../Public/BOOSTRAP-TASK/Images/s3.png" class="w-100">
+
+                    </div>
+                    <div class="card-body">
+                        <p class="fw-bold mt-4 ">WEB MARKETING!!</p>
+                        <p>Online ordering system helps to maintain a Better Business Relationship with your customers,
+                            which is a key factor to run any successful business.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <footer class="mt-5 bg-black text-white p-5">
+        <div class="footer-title text-center">
+            <h4>Naresh Technologies</h4>
+        </div>
+        <div class="d-flex justify-content-evenly  mt-4">
+            <ul>
+                <li class="bi bi-facebook mb-2"> Facebook
+                </li>
+                <li class="bi bi-google mb-2"> Google</li>
+                <li class="bi bi-twitter mb-2"> Twitter</li>
+                <li class="bi bi-youtube"> Youtube</li>
+            </ul>
+            <ul>
+                <li class="mb-2">Home</li>
+                <li class="mb-2">About</li>
+                <li class="mb-2">Service</li>
+                <li class="mb-2">Contact</li>
+            </ul>
+            <ul>
+                <li class="mb-2">Name : Naresh Istitute</li>
+                <li class="mb-2">Email : info@nareshit.com</li>
+                <li class="mb-2">Contact : +91-xxxxxxxxxx</li>
+                <li class="mb-2">Address : Sr nagar, Hyderabad, Telangana, India</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
